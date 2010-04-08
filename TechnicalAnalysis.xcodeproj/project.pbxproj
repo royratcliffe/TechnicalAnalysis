@@ -7,9 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7880D1DE116DE791000A6790 /* TASMAOp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7880D1DC116DE791000A6790 /* TASMAOp.h */; };
+		7880D1DF116DE791000A6790 /* TASMAOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880D1DD116DE791000A6790 /* TASMAOp.m */; };
+		7880D24D116DF033000A6790 /* TALib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7880D24A116DF030000A6790 /* TALib.framework */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7880D249116DF030000A6790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0 /* TALib.framework */;
+			remoteInfo = TALib;
+		};
+		7880D24B116DF030000A6790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CCF3214B0BA7887D0014ABA6 /* Regression Tests */;
+			remoteInfo = "Regression Tests";
+		};
+		7880D24E116DF03B000A6790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0 /* TALib */;
+			remoteInfo = TALib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -17,6 +44,9 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* TechnicalAnalysis_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechnicalAnalysis_Prefix.pch; sourceTree = "<group>"; };
+		7880D1DC116DE791000A6790 /* TASMAOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASMAOp.h; sourceTree = "<group>"; };
+		7880D1DD116DE791000A6790 /* TASMAOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASMAOp.m; sourceTree = "<group>"; };
+		7880D241116DF030000A6790 /* TALib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TALib.xcodeproj; path = "../ta-lib/tags/release-0-4-0/ta-lib/c/ide/xcode/TALib/TALib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* TechnicalAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TechnicalAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -28,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				7880D24D116DF033000A6790 /* TALib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +76,7 @@
 		0867D691FE84028FC02AAC07 /* TechnicalAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				7880D241116DF030000A6790 /* TALib.xcodeproj */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
@@ -75,6 +107,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7880D1DC116DE791000A6790 /* TASMAOp.h */,
+				7880D1DD116DE791000A6790 /* TASMAOp.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -105,6 +139,15 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		7880D242116DF030000A6790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7880D24A116DF030000A6790 /* TALib.framework */,
+				7880D24C116DF030000A6790 /* Regression Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -112,6 +155,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7880D1DE116DE791000A6790 /* TASMAOp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +174,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7880D24F116DF03B000A6790 /* PBXTargetDependency */,
 			);
 			name = TechnicalAnalysis;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -148,12 +193,35 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* TechnicalAnalysis */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7880D242116DF030000A6790 /* Products */;
+					ProjectRef = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* TechnicalAnalysis */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7880D24A116DF030000A6790 /* TALib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TALib.framework;
+			remoteRef = 7880D249116DF030000A6790 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7880D24C116DF030000A6790 /* Regression Tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Regression Tests";
+			remoteRef = 7880D24B116DF030000A6790 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DC2EF520486A6940098B216 /* Resources */ = {
@@ -171,10 +239,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7880D1DF116DE791000A6790 /* TASMAOp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7880D24F116DF03B000A6790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TALib;
+			targetProxy = 7880D24E116DF03B000A6790 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
