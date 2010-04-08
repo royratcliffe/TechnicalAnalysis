@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7880D1DE116DE791000A6790 /* TASMAOp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7880D1DC116DE791000A6790 /* TASMAOp.h */; };
+		7880D1DE116DE791000A6790 /* TASMAOp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7880D1DC116DE791000A6790 /* TASMAOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7880D1DF116DE791000A6790 /* TASMAOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880D1DD116DE791000A6790 /* TASMAOp.m */; };
 		7880D24D116DF033000A6790 /* TALib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7880D24A116DF030000A6790 /* TALib.framework */; };
+		7880D2A9116DF98E000A6790 /* TechnicalAnalysis.h in Headers */ = {isa = PBXBuildFile; fileRef = 7880D2A8116DF98E000A6790 /* TechnicalAnalysis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -19,21 +20,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0 /* TALib.framework */;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
 			remoteInfo = TALib;
 		};
 		7880D24B116DF030000A6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = CCF3214B0BA7887D0014ABA6 /* Regression Tests */;
+			remoteGlobalIDString = CCF3214B0BA7887D0014ABA6;
 			remoteInfo = "Regression Tests";
 		};
 		7880D24E116DF03B000A6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7880D241116DF030000A6790 /* TALib.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0 /* TALib */;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
 			remoteInfo = TALib;
 		};
 /* End PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7880D1DC116DE791000A6790 /* TASMAOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASMAOp.h; sourceTree = "<group>"; };
 		7880D1DD116DE791000A6790 /* TASMAOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASMAOp.m; sourceTree = "<group>"; };
 		7880D241116DF030000A6790 /* TALib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TALib.xcodeproj; path = "../ta-lib/tags/release-0-4-0/ta-lib/c/ide/xcode/TALib/TALib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		7880D2A8116DF98E000A6790 /* TechnicalAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechnicalAnalysis.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* TechnicalAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TechnicalAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				32DBCF5E0370ADEE00C91783 /* TechnicalAnalysis_Prefix.pch */,
+				7880D2A8116DF98E000A6790 /* TechnicalAnalysis.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7880D1DE116DE791000A6790 /* TASMAOp.h in Headers */,
+				7880D2A9116DF98E000A6790 /* TechnicalAnalysis.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +279,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -294,6 +299,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TechnicalAnalysis_Prefix.pch;

@@ -35,6 +35,7 @@
 
 - (void)main
 {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	int begIdx, NBElement;
 	NSUInteger numberOfValues = [[self values] count];
 	size_t size = sizeof(double)*numberOfValues;
@@ -47,6 +48,7 @@
 	while (NBElement-- > 0) [numbers addObject:[NSNumber numberWithDouble:doubleResults[begIdx++]]];
 	free(doubleResults);
 	[self setResults:numbers];
+	[pool release];
 }
 
 @end
